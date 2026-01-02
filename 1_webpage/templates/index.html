@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Moja Strona{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto text-center">
+        <h1 class="display-4 mb-4">Witaj na mojej stronie!</h1>
+        <p class="lead mb-4">
+            To jest moja strona domowa zbudowana za pomocą Flask i Bootstrap.
+        </p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">🏠 Home</h5>
+                        <a href="{{ url_for('home') }}" class="card-text">
+                        Strona główna
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">👤 O mnie</h5>
+                        <a href="{{ url_for('about_me') }}" class="card-text">
+                        Dowiedz się więcej o mnie
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">📧 Kontakt</h5>
+                        <a href="{{ url_for('contact') }}" class="card-text">
+                        Skontaktuj się ze mną
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ url_for('about_me') }}" class="btn btn-primary btn-lg mt-4">
+            Dowiedz się więcej
+        </a>
+    </div>
+</div>
+{% endblock %}
