@@ -14,3 +14,5 @@ users = {
 }
 ```
 * Na razie nie zapisujemy użytkownika do bazy danych więc zniknie po zrestatowaniu serwera
+
+- [x] Zrobione

@@ -4,3 +4,5 @@
    - ```/``` – Strona główna
    - ```/about-me``` – O mnie
    - ```/contact``` – Kontakt z formularze kontatkowym
+
+- [x] Zrobione
